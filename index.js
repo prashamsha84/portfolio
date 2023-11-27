@@ -10,7 +10,7 @@
 var tagCloud = TagCloud('.content', myTags,{
 
 // radius in px
-radius: 200,
+radius: 160,
 
 // animation speed
 // slow, normal, fast
