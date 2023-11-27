@@ -10,7 +10,7 @@
 var tagCloud = TagCloud('.content', myTags,{
 
 // radius in px
-radius: 240,
+radius: 200,
 
 // animation speed
 // slow, normal, fast
@@ -32,22 +32,6 @@ document.querySelector('.content').style.color = colors;
 
 
 //nav-active
-
-// // Get all elements matching the selector '.nav li'
-// const elements = document.querySelectorAll('.nav li');
-
-// // Function to handle the click event on elements
-// function handleElementClick(event) {
-//     // Remove the 'active' class from all elements
-//     elements.forEach(element => element.classList.remove('active'));
-
-//     // Add the 'active' class to the clicked element
-//     this.classList.add('active');
-// }
-
-// // Add click event listeners to all elements matching the selector
-// elements.forEach(element => element.addEventListener('click', handleElementClick));
-
 const sections = document.querySelectorAll("section[id]");
 window.addEventListener("scroll", scrollActive); 
 
