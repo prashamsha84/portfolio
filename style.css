@@ -72,6 +72,7 @@ p{
     max-width: 100%;
   }
 } 
+
 /* nav */
 header {
   background: var(--bg-liner);
@@ -267,6 +268,7 @@ h1 {
     }
   .info-head {
     width: 55%;
+    margin: 4rem 0;
     }
   .profile-image{
     display: block;
@@ -277,13 +279,9 @@ h1 {
   .nav-header {
     padding: 0 4em;
   }
-  section {
-    padding: 4em;
-  }
 }
 
 /* contact btn */
-
 button {
   margin-top: var(--m-s);
   background: var(--bg-light);
@@ -359,6 +357,9 @@ span {
     text-align: center;
     padding-left: 2rem;
   }
+  section {
+    padding: 4em;
+  }
 }
 
 /* about */
@@ -430,6 +431,17 @@ span {
 }
 
 /* responsive */
+@media screen and (min-width: 768px) {
+  .tech-skills_links {
+    display: grid;
+    justify-content: space-between;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 8rem;
+  }
+  .tagcloud {
+    margin-top: 8rem;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .tech-skill_container {
@@ -441,11 +453,10 @@ span {
   .tech-skills_links {
     display: grid;
     grid-template: repeat(3, 15px) / repeat(4, 15px);
-    gap: 8rem;
+  
   }
   .tagcloud {
     margin-left: 4rem;
-    margin-top: 8rem;
   }
 }
 
@@ -515,7 +526,7 @@ span {
   .soft-skill_images {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    gap: 6rem;
+    gap: 8rem;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -579,6 +590,12 @@ span {
     justify-content: space-between;
   }
   .card {
+    max-width: 200px;
+  }
+  
+}
+@media screen and (min-width: 1024px) {
+  .card {
     max-width: 250px;
   }
   .card button {
@@ -587,6 +604,7 @@ span {
   .margin-button {
     margin-left: 20px;
   }
+  
 }
 /* contact -section */
 .footer-contact {
