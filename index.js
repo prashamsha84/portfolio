@@ -1,7 +1,7 @@
 // spiral js
     const myTags = [
     'JavaScript', 'CSS', 'HTML',
-    'C', 'React' ,'Figma',
+    'Bootstrap', 'React' ,'Figma',
     'Python', 'Java', 'GitHub',
     'AdobeXD', 'Photoshop', 'UI/UX',
     'Illutration', 'MsSQL', 'C#',
@@ -56,6 +56,25 @@ function scrollActive() {
   });
 }
 
+// scroll animation
+
+function scrollbm() {
+  var scrolls = document.querySelectorAll(".scroll-bm");
+
+  for (var i = 0; i <  scrolls.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = scrolls[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      scrolls[i].classList.add("active");
+    } else {
+      scrolls[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", scrollbm);
 
 
 
